@@ -1,0 +1,36 @@
+.header .slick-track {
+    display: flex;
+    padding-left: 60px;
+}
+
+.header .slick-dots {
+    display: flex;
+    grid-gap: 15px;
+    position: relative;
+    z-index: 2;
+    padding-left: 120px;
+    top: -40px;
+}
+.header .slick-dots li {
+    background: none;
+    border-radius: 2px;
+    border: 0.5px solid #AEAEAE;
+    transition: .2s;
+    max-width: 20px;
+    min-width: 20px;
+    height: 5px;
+}
+.header .slick-dots li.slick-active {
+    background: #11D1CD;
+    border: 0.5px solid #11D1CD;
+}
+.header .slick-dots li:hover {
+    background: #11D1CD;
+    border: 0.5px solid #11D1CD;
+}
+.slick-dots li {
+    cursor: pointer;
+}
+.slick-dots li button {
+    display: none;
+}

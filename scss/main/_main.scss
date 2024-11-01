@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+$main__color: #373737;
+$bg__linear: linear-gradient(180deg, #449E9C 0%, #224F4E 100%);
+$light__blue: #09DAD5;
+$light__blue-2: #11D1CD;
+$medium__blue: #449E9C;
+$dark__blue: #337775; 
+$white: #ffffff;
+$grey: #747474;
+$bg__dark: #040A0A;
+$shadow: 0px 10px 20px rgba(43, 99, 98, 0.25);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: $main__color;
+    font-size: 18px;
+    line-height: 22px;
+}
+body {
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    display: block;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+
+
+
+@mixin text($color, $align, $weight) {
+    text-align: $align;
+    font-weight: $weight;
+    color: $color;
+}
+
+%headline {
+    font-size: 40px;
+    line-height: 49px;
+    text-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+}
+%second__headline {
+    font-size: 30px;
+    line-height: 37px;
+    text-shadow: 0px 10px 30px #FFFFFF;
+}
+%third__headline {
+    font-size: 25px;
+    line-height: 30px;
+}
+%fourth__headline {
+    font-size: 20px;
+    line-height: 24px;
+}
+%small__text {
+    font-size: 15px;
+    line-height: 18px;
+}
+%extra-small__text {
+    font-size: 13px;
+    line-height: 16px;
+}

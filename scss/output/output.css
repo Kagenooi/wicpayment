@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #373737;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.output__headline {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+main {
+  background: url("../../image/bg-decor-5.png") no-repeat center;
+  background-size: cover;
+}
+
+.output {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 50px 40px;
+}
+
+.output__headline {
+  text-align: left;
+  font-weight: 700;
+  color: #373737;
+}
+
+.output__path {
+  width: 100%;
+  max-width: 640px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto minmax(0px, 350px);
+      grid-template-columns: auto minmax(0px, 350px);
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.output__path input {
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #AEAEAE;
+  background: #ffffff;
+  outline: none;
+  padding: 10px 15px;
+}
+
+.output__path_headline strong {
+  font-weight: 600;
+}
+
+.output__path .select {
+  position: relative;
+}
+
+.output__path .select .next,
+.output__path .select .prev {
+  position: absolute;
+  background: none;
+  right: 15px;
+  width: 8px;
+  height: 8px;
+}
+
+.output__path .select .next svg,
+.output__path .select .prev svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.output__path .select .next {
+  top: 8px;
+}
+
+.output__path .select .prev {
+  bottom: 8px;
+}
+
+.output__path .select select {
+  border: 1px solid #AEAEAE;
+  background: #ffffff;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+.output .submit {
+  background: #1A3B3B;
+  -webkit-box-shadow: 0px 10px 20px rgba(43, 99, 98, 0.25);
+          box-shadow: 0px 10px 20px rgba(43, 99, 98, 0.25);
+  padding: 20px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+/*# sourceMappingURL=output.css.map */

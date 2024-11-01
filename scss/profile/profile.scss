@@ -1,0 +1,133 @@
+@import '../main/_main.scss';
+
+
+main {
+    background: url('../../image/bg-decor-4.png') no-repeat center;
+    background-size: cover;
+}
+
+
+.profile {
+    display: grid;
+    border-radius: 5px;
+    background: $white;
+    padding: 50px 40px;
+
+    &__headline {
+        @include text($main__color, left, 700);
+        @extend %third__headline;
+        margin-bottom: 40px;
+    }
+    &__id {
+        display: flex;
+
+        .user-name {
+            margin-right: 40px;
+        }
+        .user-id {
+            @include text($dark__blue, left, 600);
+            @extend %fourth__headline;
+        }
+    }
+    input {
+        outline: none;
+    }
+    &__registration-data {
+        display: grid;
+        grid-gap: 30px;
+        padding-right: 47px;
+        margin: 90px 0;
+
+        &_headline {
+            @include text($main__color, left, 600);
+            @extend %fourth__headline;
+            margin-bottom: 10px;
+        }
+        &_path {
+            display: grid;
+            grid-gap: 30px;
+
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4) {
+                grid-template-columns: 1fr minmax(0px, 350px);
+            }
+            &:nth-child(5),
+            &:nth-child(6),
+            &:nth-child(7) {
+                grid-template-columns: 1fr minmax(0px, 445px);
+            }
+            .desc {
+                display: grid;
+                grid-gap: 10px;
+
+                .paragraph {
+                    @include text($grey, left, 400);
+                    @extend %extra-small__text;
+                }
+            }
+            .inp {
+                position: relative;
+
+                img {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+                input {
+                    border: 1px solid #AEAEAE;
+                    border-radius: 10px;
+                    width: 100%;
+                    padding: 18px;
+                }
+            }
+        }
+    }
+    &__contacts-data {
+        display: grid;
+        grid-gap: 30px;
+        padding-right: 47px;
+        
+        &_headline {
+            @include text($main__color, left, 600);
+            @extend %fourth__headline;
+            margin-bottom: 10px;
+        }
+        &_path {
+            display: grid;
+            grid-gap: 30px;
+            grid-template-columns: 1fr minmax(0px, 350px);
+
+            .desc {
+                display: grid;
+                grid-gap: 10px;
+
+                .paragraph {
+                    @include text($grey, left, 400);
+                    @extend %extra-small__text;
+                }
+            }
+            input {
+                border: 1px solid #AEAEAE;
+                border-radius: 10px;
+                width: 100%;
+                padding: 18px;
+            }
+        }
+    }
+    .required {
+        color: #ff0000;
+    }
+    .submit {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        background: #1A3B3B;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        text-transform: uppercase;
+        @include text($white, center, 700);
+        margin: 50px auto 0;
+    }
+}

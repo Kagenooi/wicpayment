@@ -1,0 +1,46 @@
+@import '../main/_main.scss';
+
+
+main {
+    background: url('../../image/bg-decor-4.png') no-repeat center;
+    background-size: cover;
+}
+
+
+
+.support {
+    display: grid;
+    grid-template-columns: minmax(0px, 445px);
+    background: $white;
+    border-radius: 5px;
+    padding: 50px 40px;
+
+    &__headline {
+        @include text($main__color, left, 700);
+        @extend %third__headline;
+        margin-bottom: 40px;
+    }
+    input,
+    textarea {
+        outline: none;
+        padding: 18px;
+        border: 1px solid #AEAEAE;
+        border-radius: 10px;
+        outline: none;
+        margin-bottom: 30px;
+    }
+    textarea {
+        resize: none;
+        height: 250px;
+    }
+    .submit {
+        width: 100%;
+        max-width: 300px;
+        padding: 20px;
+        background: #1A3B3B;
+        border-radius: 5px;
+        box-shadow: $shadow;
+        text-transform: uppercase;
+        @include text($white, center, 700);
+    }
+}

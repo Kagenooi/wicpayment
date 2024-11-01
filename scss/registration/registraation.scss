@@ -1,0 +1,58 @@
+@import '../main/_main.scss';
+
+
+main {
+    background: url('../../image/bg-decor-4.png') no-repeat center;
+    background-size: cover;
+}
+
+
+
+.registration {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 475px;
+    padding: 90px 15px;
+    margin: 0 auto;
+
+    &__headline {
+        @include text($main__color, center, 700);
+        @extend %second__headline;
+        margin-bottom: 30px;
+    }
+    label {
+        display: grid;
+        grid-gap: 12px;
+        
+        .name {
+            @include text($main__color, left, 500);
+            @extend %fourth__headline;
+        }
+        input {
+            width: 100%;
+            background: $white;
+            border: 1px solid #AEAEAE;
+            border-radius: 10px;
+            width: 100%;
+            padding: 18px;
+            @include text($main__color, left, 500);
+            @extend %fourth__headline;
+            outline: none;
+        }
+    }
+    .submit {
+        width: 100%;
+        border-radius: 5px;
+        background: #1A3B3B;
+        box-shadow: $shadow;
+        margin-top: 10px;
+
+        a {
+            display: block;
+            text-transform: uppercase;
+            @include text($white, center, 700);
+            padding: 20px;
+        }
+    }
+}

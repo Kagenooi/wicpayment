@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #373737;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.navbar__menu .person .dropdown.active li, .navbar__menu .person button .paragraph {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.navbar__menu_language_dropdown button, .navbar__menu_language .dropdown__btn .name {
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.navbar {
+  width: 100%;
+  background: #337775;
+}
+
+.navbar__content {
+  width: 100%;
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 15px;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar__menu {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 30px;
+}
+
+.navbar__menu_link {
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar__menu_link.faq {
+  display: block;
+  margin: 0 10px;
+}
+
+.navbar__menu .person {
+  position: relative;
+}
+
+.navbar__menu .person .dropdown {
+  display: none;
+  top: 40px;
+  left: 0;
+  position: absolute;
+  background: #337775;
+  border-radius: 5px;
+  padding: 6px 16px;
+  width: 100%;
+}
+
+.navbar__menu .person .dropdown.active {
+  display: block;
+}
+
+.navbar__menu .person .dropdown.active li {
+  text-align: left;
+  font-weight: 400;
+  color: #ffffff;
+  display: block;
+  padding: 4px 0;
+  cursor: pointer;
+}
+
+.navbar__menu .person button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+}
+
+.navbar__menu .person button img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.navbar__menu .person button .paragraph {
+  text-align: left;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar__menu .registration__btn {
+  background: none;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  padding: 10px 30px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar__menu .sign-in__btn {
+  background: #11D1CD;
+  border: 1px solid #11D1CD;
+  border-radius: 5px;
+  padding: 10px 27px;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar__menu_language {
+  position: relative;
+}
+
+.navbar__menu_language_dropdown {
+  position: absolute;
+  display: none;
+}
+
+.navbar__menu_language_dropdown.active {
+  display: block;
+}
+
+.navbar__menu_language_dropdown button {
+  background: none;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 4px 0;
+}
+
+.navbar__menu_language button {
+  background: none;
+}
+
+.navbar__menu_language .dropdown__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__menu_language .dropdown__btn .name {
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.navbar__menu_language .dropdown__btn svg {
+  display: block;
+  margin-top: 4px;
+}
+/*# sourceMappingURL=navbar.css.map */

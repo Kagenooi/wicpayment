@@ -1,0 +1,6 @@
+$('.ron-slider__track').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="prev"><span class="active"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.5 35C39.5 37.4853 37.4853 39.5 35 39.5L0.5 39.5L0.500003 0.499997L35 0.5C37.4853 0.5 39.5 2.51472 39.5 5L39.5 35Z" fill="#11D1CD" stroke="#11D1CD"/><path d="M18 29L26.4853 20.5147L18 12.0294" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>',
+    nextArrow: '<button type="button" class="next"><span class="active"><svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M39.5 35C39.5 37.4853 37.4853 39.5 35 39.5L0.5 39.5L0.500003 0.499997L35 0.5C37.4853 0.5 39.5 2.51472 39.5 5L39.5 35Z" fill="#11D1CD" stroke="#11D1CD"/><path d="M18 29L26.4853 20.5147L18 12.0294" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span></button>'
+});

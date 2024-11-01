@@ -1,0 +1,10 @@
+.slick-track {
+    display: flex;
+    grid-gap: 20px;
+}
+.area__assets_slider_track {
+    display: grid;
+    grid-template-columns: 40px minmax(0px, 780px) 40px;
+    align-items: center;
+    grid-gap: 20px;
+}

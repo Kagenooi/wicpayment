@@ -1,0 +1,129 @@
+@import '../main/_main.scss';
+
+
+
+.navbar {
+    width: 100%;
+    background: $dark__blue;
+
+    &__content {
+        width: 100%;
+        max-width: 1310px;
+        margin: 0 auto;
+        padding: 15px;
+        display: grid;
+        grid-auto-flow: column;
+        grid-gap: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: center;
+        grid-gap: 30px;
+
+        &_link {
+            @include text($white, center, 400);
+
+            &.faq {
+                display: block;
+                margin: 0 10px;
+            }
+        }
+        .person {
+            position: relative;
+
+            .dropdown {
+                display: none;
+                top: 40px;
+                left: 0;
+                position: absolute;
+                background: $dark__blue;
+                border-radius: 5px;
+                padding: 6px 16px;
+                width: 100%;
+
+                &.active {
+                    display: block;
+                    
+                    li {
+                        @include text($white, left, 400);
+                        @extend %fourth__headline;
+                        display: block;
+                        padding: 4px 0;
+                        cursor: pointer;
+                    }
+                }
+            }
+            button {
+                display: flex;
+                grid-gap: 15px;
+                align-items: center;
+                background: none;
+
+                img {
+                    display: block;
+                    object-fit: cover;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 5px;
+                }
+                .paragraph {
+                    @include text($white, left, 400);
+                    @extend %fourth__headline;
+                }
+            }
+        }
+        .registration__btn {
+            background: none;
+            border: 1px solid #FFFFFF;
+            border-radius: 5px;
+            padding: 10px 30px;
+            @include text($white, center, 400);
+        }
+        .sign-in__btn {
+            background: $light__blue-2;
+            border: 1px solid $light__blue-2;
+            border-radius: 5px;
+            padding: 10px 27px;
+            @include text($white, center, 400);
+        }
+        &_language {
+            position: relative;
+
+            &_dropdown {
+                position: absolute;
+                display: none;
+                
+                &.active {
+                    display: block;
+                }
+                button {
+                    background: none;
+                    @extend %small__text;
+                    @include text($white, center, 400);
+                    padding: 4px 0;
+                }
+            }
+            button {
+                background: none;
+            }
+            .dropdown__btn {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .name {
+                    display: block;
+                    @extend %small__text;
+                    @include text($white, center, 400);
+                }
+                svg {
+                    display: block;
+                    margin-top: 4px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #373737;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  display: block;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+.profile__headline {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.profile__id .user-id, .profile__registration-data_headline, .profile__contacts-data_headline {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.profile__registration-data_path .desc .paragraph, .profile__contacts-data_path .desc .paragraph {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+main {
+  background: url("../../image/bg-decor-4.png") no-repeat center;
+  background-size: cover;
+}
+
+.profile {
+  display: -ms-grid;
+  display: grid;
+  border-radius: 5px;
+  background: #ffffff;
+  padding: 50px 40px;
+}
+
+.profile__headline {
+  text-align: left;
+  font-weight: 700;
+  color: #373737;
+  margin-bottom: 40px;
+}
+
+.profile__id {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile__id .user-name {
+  margin-right: 40px;
+}
+
+.profile__id .user-id {
+  text-align: left;
+  font-weight: 600;
+  color: #337775;
+}
+
+.profile input {
+  outline: none;
+}
+
+.profile__registration-data {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  padding-right: 47px;
+  margin: 90px 0;
+}
+
+.profile__registration-data_headline {
+  text-align: left;
+  font-weight: 600;
+  color: #373737;
+  margin-bottom: 10px;
+}
+
+.profile__registration-data_path {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+.profile__registration-data_path:nth-child(2), .profile__registration-data_path:nth-child(3), .profile__registration-data_path:nth-child(4) {
+  -ms-grid-columns: 1fr minmax(0px, 350px);
+      grid-template-columns: 1fr minmax(0px, 350px);
+}
+
+.profile__registration-data_path:nth-child(5), .profile__registration-data_path:nth-child(6), .profile__registration-data_path:nth-child(7) {
+  -ms-grid-columns: 1fr minmax(0px, 445px);
+      grid-template-columns: 1fr minmax(0px, 445px);
+}
+
+.profile__registration-data_path .desc {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.profile__registration-data_path .desc .paragraph {
+  text-align: left;
+  font-weight: 400;
+  color: #747474;
+}
+
+.profile__registration-data_path .inp {
+  position: relative;
+}
+
+.profile__registration-data_path .inp img {
+  display: block;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.profile__registration-data_path .inp input {
+  border: 1px solid #AEAEAE;
+  border-radius: 10px;
+  width: 100%;
+  padding: 18px;
+}
+
+.profile__contacts-data {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  padding-right: 47px;
+}
+
+.profile__contacts-data_headline {
+  text-align: left;
+  font-weight: 600;
+  color: #373737;
+  margin-bottom: 10px;
+}
+
+.profile__contacts-data_path {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr minmax(0px, 350px);
+      grid-template-columns: 1fr minmax(0px, 350px);
+}
+
+.profile__contacts-data_path .desc {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+.profile__contacts-data_path .desc .paragraph {
+  text-align: left;
+  font-weight: 400;
+  color: #747474;
+}
+
+.profile__contacts-data_path input {
+  border: 1px solid #AEAEAE;
+  border-radius: 10px;
+  width: 100%;
+  padding: 18px;
+}
+
+.profile .required {
+  color: #ff0000;
+}
+
+.profile .submit {
+  width: 100%;
+  max-width: 300px;
+  padding: 20px;
+  background: #1A3B3B;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 10px 20px rgba(43, 99, 98, 0.25);
+          box-shadow: 0px 10px 20px rgba(43, 99, 98, 0.25);
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 50px auto 0;
+}
+/*# sourceMappingURL=profile.css.map */
